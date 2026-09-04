@@ -1,0 +1,32 @@
+{
+  "Estimator": "sklearn.ensemble.HistGradientBoostingRegressor",
+  "Parameters": {
+    "max_iter": 250,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "l2_regularization": 1.0,
+    "random_state": 42
+  },
+  "PredictorColumns": [
+    "DayOfWeek",
+    "Month",
+    "WeekOfYear",
+    "SinDayOfWeek",
+    "CosDayOfWeek",
+    "SinDayOfYear",
+    "CosDayOfYear",
+    "TimeIndex",
+    "UnitsLag1",
+    "UnitsLag7",
+    "UnitsLag14",
+    "UnitsLag28",
+    "UnitsRolling7Mean",
+    "UnitsRolling28Mean",
+    "ClosedInvoiceCount",
+    "ClosedActiveCustomerCount",
+    "ClosedNMRGBP"
+  ],
+  "TargetColumn": "ActualCompletedUnits",
+  "LossMetric": "WAPE",
+  "WAPEFormula": "sum(abs(actual-prediction))/sum(abs(actual))*100"
+}
