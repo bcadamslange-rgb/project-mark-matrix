@@ -1,0 +1,2 @@
+Metric,MaximumPct,DecisionIfAllGatesPass,DecisionIfAnyGateFails
+WAPE,51.0,CERTIFY,HOLD
