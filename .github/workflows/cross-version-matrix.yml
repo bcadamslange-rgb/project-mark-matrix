@@ -30,9 +30,9 @@ jobs:
             "pandas==2.2.3" \
             "scipy==1.10.1" \
             "scikit-learn==${{ matrix.sklearn }}"
-      - name: Run exact candidate matrix
+      - name: Run exact predictive matrix
         run: |
-          python run_week_matrix.py --out "week_matrix_${{ matrix.sklearn }}.csv"
+          python run_compact_matrix.py --root matrix_input --out "week_matrix_${{ matrix.sklearn }}.csv"
       - name: Upload result
         uses: actions/upload-artifact@v4
         with:
