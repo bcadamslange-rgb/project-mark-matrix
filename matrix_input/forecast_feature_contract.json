@@ -1,0 +1,39 @@
+{
+  "RowGrain": "one governed validation target date",
+  "ValidationOutputStart": "2011-01-01",
+  "ValidationOutputEnd": "2011-09-30",
+  "ForecastOriginRule": "TargetDate at 05:00:00 Europe/London",
+  "Columns": [
+    "TargetDate",
+    "ForecastOrigin",
+    "ValidationFold",
+    "DayOfWeek",
+    "Month",
+    "WeekOfYear",
+    "SinDayOfWeek",
+    "CosDayOfWeek",
+    "SinDayOfYear",
+    "CosDayOfYear",
+    "TimeIndex",
+    "UnitsLag1",
+    "UnitsLag7",
+    "UnitsLag14",
+    "UnitsLag28",
+    "UnitsRolling7Mean",
+    "UnitsRolling28Mean",
+    "ClosedInvoiceCount",
+    "ClosedActiveCustomerCount",
+    "ClosedNMRGBP",
+    "CloseReportDate",
+    "CloseReportPublishedAt",
+    "ActualCompletedUnits",
+    "Prediction",
+    "AbsoluteError"
+  ],
+  "NoExtraColumns": true,
+  "NumericPrecision": {
+    "Prediction": 2,
+    "AbsoluteError": 2,
+    "ClosedNMRGBP": 2
+  }
+}
