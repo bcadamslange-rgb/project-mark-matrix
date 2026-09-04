@@ -1,0 +1,6 @@
+Run the attached exact candidate bytes without changing the gate or data. For each available sklearn wheel, run run_week_matrix.py and return the three WAPEs for ISO, Sunday %U, and Monday %W plus Python/sklearn/numpy/pandas/scipy versions.
+
+Admission rule:
+max(%U and %W across tested toolchains) < 51.0 < min(ISO across tested toolchains)
+
+Do not approve on non-overlap alone. Report the smallest buffer from either range to the 51.0 gate and the total open interval. The current sklearn 1.8.0 result is ISO 52.240580 HOLD, %U 49.103747 CERTIFY, %W 49.745125 CERTIFY. Current minimum gate buffer is 1.240580 points. If any reasonable wheel collapses all constructions onto HOLD/CERTIFY or causes overlap across the gate, kill the candidate. Do not sand the gate and do not use requirements pinning as the stump.
